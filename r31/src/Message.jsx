@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 class Message extends React.Component{
     render(){
         return <div>
@@ -6,4 +6,4 @@ class Message extends React.Component{
                 </div>
     }
 }
-export default Message;
+export default Message;*/

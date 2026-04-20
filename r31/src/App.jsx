@@ -1,9 +1,11 @@
-import React from "react";
-class App extends React.Component{
-    render(){
-        return <div>
-                    <h1>App Component</h1>
-                </div>
-    }
+let Movie = ()=>{
+    let movie_Name="Durandhar 2";
+    let actor="Ranveer Singh";
+
+    return <div>
+                <h3>Movie Component</h3>
+                <h2>Movie Name:{movie_Name}</h2>
+                <h3>Hero Name:{actor}</h3>
+        </div>
 }
-export default App;
+export default Movie;
