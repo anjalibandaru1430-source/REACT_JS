@@ -1,15 +1,15 @@
-/*import Message from "./StateEx/Message";
+import Counter from "./StateEx/Counter";
 let App = ()=>{
     return <div>
                 <h2>App Component</h2>
                 <hr/>
-                <Message/>
+                <Counter/>
             </div>
 }
-export default App;*/
+export default App;
 
 
-import User from "./props/User";
+/*import User from "./props/User";
 let App=()=>{
   return <div>
     <h1>App Component</h1>
@@ -17,6 +17,6 @@ let App=()=>{
     <User/>   
   </div>
 }
-export  default App;
+export  default App;*/
 
 
