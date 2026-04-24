@@ -1,8 +1,17 @@
-import Reg from "./Reg";
-let App = ()=>{
-    return <div>
-        <h1>Registration Form</h1>
-        <Reg />
+import React from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import Message from './Message';
+import Navbar from './Navbar';
+
+let App = () => {
+  return (
+    <div className="full-width">
+
+      <Navbar />
+      <h1 className="text-center text-primary">Hello React</h1>
+      <Message />
     </div>
+  );
 }
-export default App;
+
+export default App; 

@@ -1,4 +1,4 @@
-import Counter from "./StateEx/Counter";
+import Counter from "./Message";
 let App = ()=>{
     return <div>
                 <h2>App Component</h2>
