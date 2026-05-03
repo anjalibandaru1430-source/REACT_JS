@@ -16,7 +16,7 @@ let Employee=()=>{
                 {
                     users.length>0 ? 
                     <>
-                    <table border={3}>
+                    <table className="table table-striped table-bordered">
                             <thead>
                                 <tr>
                                 <th>Employee Id</th>
