@@ -18,7 +18,7 @@ let App = ()=>{
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/about' element={<About/>}/>
         </Routes>
-          </Router>
+      </Router>
           </div>
 }
 export default App;
