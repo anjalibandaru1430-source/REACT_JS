@@ -15,7 +15,7 @@ let ContactList = (props)=>{
                     <tbody>
                     {
                         props.users.map((user,index)=>{
-                            return <tr key={index}>
+                            return <tr key={index} onClick={setContactHandler.bind(null,user)}>
                                         <td>{user.login.uuid.substring(32)}</td>
                                         <td>{user.name.first}</td>
                                         <td>{user.location.city}</td>
