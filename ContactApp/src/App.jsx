@@ -1,5 +1,6 @@
 import Navbar from "./Navbar/Navbar";
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './components/Home';
 import ContactApp from './contactapp/ContactApp';
 import ContactList from "./contactapp/ContactList";
