@@ -12,6 +12,7 @@ let ContactDetails=(props)=>{
                 <ul className="list-group">
                         <li className="list-group-item">{props.selUser.name.first}</li>
                         <li className="list-group-item">{props.selUser.dob.age}</li>
+                        <li className="list-group-item">{props.selUser.email}</li>
                 </ul>
                 </div>
             </div>
