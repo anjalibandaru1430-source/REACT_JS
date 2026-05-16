@@ -16,6 +16,7 @@ let ContactDetails=(props)=>{
                 </ul>
                 </div>
             </div>
+
             </div>
 }
 export default ContactDetails;
