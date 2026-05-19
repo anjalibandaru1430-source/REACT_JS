@@ -1,38 +1,27 @@
-/*import { useState } from "react";
+import {useState} from 'react';
 
-let Login = ()=>{
-    let [tc,setTC] = useState(true);
-    let tcHandler = (event)=>{
-        setTC(!event.target.checked)
+let Login=()=>{
+    let [tc,setTc]=useState(false);
+    let [email,setEmail]=useState("");
+    let [password,setPassword]=useState("");
+    let tcHandler=(event)=>{
+        setTc(event.target.checked);
+    }
+    let emailHandler=(event)=>{
+        setEmail(event.target.value);
+    }
+    let passwordHandler=(event)=>{
+        setPassword(event.target.value);
     }
     return <div>
-                <form>
-                Email : <input type="text" /> <br />
-                Password: <input type="password" /><br />
-                <input type="checkbox" onClick={tcHandler}/> Please Accept Terms & conditions <br />
+        <form>
+            email:<input type ="email" onChange={emailHandler}/><br/>
+            password:<input type="password" onChange={passwordHandler}      /><br/>
+            <input type = "checkbox" onChange={tcHandler}/>Accept t & c<br/>
+            <button type="submit" disabled={!tc}>Login</button>
+            
 
-                <input type="submit" value={"Login"} disabled={tc}/>
-                </form>
-            </div>
-}
-export default Login;*/
-
-import { useRef} from "react";
-let Login = ()=>{
-    let buttonElement=useRef(null);
-    let tcHandler = (event)=>{
-       if(event.target.checked == true){
-        buttonElement.current.disabled=false;
-       }
-       else{
-        buttonElement.current.disabled=true;
-       }
-    }
-    return <div><form>
-                Email : <input type="text" /> <br /> Password: <input type="text" /><br />
-                <input type="checkbox" onClick={tcHandler} /> Please Accept Terms & conditions <br />
-                <input disabled={true} type="submit" value={"Login"} ref={buttonElement} />
-                </form>
-            </div>
+        </form>
+    </div>
 }
 export default Login;
