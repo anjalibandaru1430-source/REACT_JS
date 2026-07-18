@@ -1,0 +1,1 @@
+document.getElementById('ct').innerHTML=new Date().toLocaleTimeString()
